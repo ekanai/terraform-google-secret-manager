@@ -6,7 +6,8 @@ This module create google secret manager and iam members.
 
 ```terraform
 module "secrets" {
-  source = "./modules/google-secret-manager"
+  source  = "ekanai/secret-manager/google"
+  version = "0.1.0"
 
   for_each = {
     project-id     = "project id"
