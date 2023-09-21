@@ -1,6 +1,11 @@
 {
-  "automerge": true,
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "automerge": true
+    }
   ]
 }
